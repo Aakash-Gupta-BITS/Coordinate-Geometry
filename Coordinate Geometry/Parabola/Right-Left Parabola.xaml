@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Co_ordinate_Geometry.Parabola.Right_Left_Parabola"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Co_ordinate_Geometry.Parabola"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0"  FontSize="25" Width="149" Text="Latus Rectum"/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,379,0,0"  FontSize="25" Width="121" Text="Find Point"/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,20,0,0"  FontSize="25" Width="53"  Text="y² ="/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325,20,0,0"  FontSize="25" Width="19"  Text="x"/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,120,0,0"   FontSize="25" Width="151" Text="Directrix : x ="/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,70,0,0"   FontSize="25" Width="80"  Text="Focus"/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,170,0,0"  FontSize="25" Width="65"  Text="Point"/>
+        <TextBlock                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,417,0,0"  FontSize="25" Width="121" Text="Length"/>
+        <TextBox    x:Name="In_Equation"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,25,0,0"                Width="156" PlaceholderText="4a" TextChanged="In_Equation_TextChanged"/>
+        <TextBox    x:Name="In_Focus"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,75,0,0"                Width="75"  PlaceholderText="x"  KeyUp="In_Focus_KeyUp"/>
+        <TextBox    x:Name="In_Directrix" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,125,0,0"               Width="156" PlaceholderText="±a" KeyUp="In_Directrix_KeyUp"/>
+        <TextBox    x:Name="In_Point_x"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,175,0,0"               Width="75"  PlaceholderText="x"  KeyUp="In_Point_x_KeyUp"/>
+        <TextBox    x:Name="In_Point_y"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="245,175,0,0"               Width="75"  PlaceholderText="y"  KeyUp="In_Point_x_KeyUp"/>
+        <TextBox    x:Name="In_Latus"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,225,0,0"               Width="156" PlaceholderText="4a" KeyUp="In_Latus_KeyUp"/>
+        <TextBox    x:Name="Find_x"       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,384,0,0"               Width="75"  PlaceholderText="x"  KeyUp="Find_x_KeyUp"/>
+        <TextBox    x:Name="Find_y"       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="245,384,0,0"               Width="75"  PlaceholderText="y"  KeyUp="Find_y_KeyUp"/>
+        <TextBox    x:Name="Output"       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="383,25,0,0"                Width="887" Height="457"         TextWrapping="Wrap"/>
+        <TextBox                          HorizontalAlignment="Left" VerticalAlignment="Top" Margin="245,75,0,0"                Width="75"  Text="0"             IsReadOnly="True"/>
+        <TextBox    x:Name="Find_Length"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,421,0,0"               Width="156" PlaceholderText="Length" IsReadOnly="True"/>
+    </Grid>
+</Page>

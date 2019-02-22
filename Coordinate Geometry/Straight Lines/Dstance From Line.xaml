@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Co_ordinate_Geometry.Straight_Lines.Dstance_From_Line"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Co_ordinate_Geometry.Straight_Lines"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="162,124,0,0" TextWrapping="Wrap" Text="Point" VerticalAlignment="Top" Height="32" Width="63" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,224,0,0" TextWrapping="Wrap" Text="Equation" VerticalAlignment="Top" Height="32" Width="100" FontSize="25"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="357,224,0,0" TextWrapping="Wrap" Text="x +" VerticalAlignment="Top" Height="32" Width="38" FontSize="25"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="527,224,0,0" TextWrapping="Wrap" Text="y +" VerticalAlignment="Top" Height="32" Width="38" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="697,224,0,0" TextWrapping="Wrap" Text="= 0" VerticalAlignment="Top" Height="32" Width="38" FontSize="25"/>
+        <TextBox x:Name="In_x" HorizontalAlignment="Left" Margin="230,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194" PlaceholderText="x" KeyUp="In_x_KeyUp"/>
+        <TextBox x:Name="In_y" HorizontalAlignment="Left" Margin="462,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194" PlaceholderText="y" KeyUp="In_x_KeyUp"/>
+        <TextBox x:Name="In_a" HorizontalAlignment="Left" Margin="230,224,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="122" PlaceholderText="a" KeyUp="In_x_KeyUp"/>
+        <TextBox x:Name="In_b" HorizontalAlignment="Left" Margin="400,224,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="122" PlaceholderText="b" KeyUp="In_x_KeyUp"/>
+        <TextBox x:Name="In_c" HorizontalAlignment="Left" Margin="570,224,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="122" PlaceholderText="c" KeyUp="In_x_KeyUp"/>
+        <TextBox x:Name="In_Slope" HorizontalAlignment="Left" Margin="135,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1060" PlaceholderText="Slope" KeyUp="In_x_KeyUp"/>
+        <CheckBox x:Name="checkbox" Content="Prependicular" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="39" IsChecked="True" Checked="checkbox_Checked" Unchecked="checkbox_Unchecked"/>
+        <TextBox x:Name="Output" HorizontalAlignment="Left" Margin="758,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="426" PlaceholderText="Output" Height="517"/>
+
+    </Grid>
+</Page>

@@ -119,10 +119,65 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calculator.xaml.cs">
+      <DependentUpon>Calculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\2 Point and line.xaml.cs">
+      <DependentUpon>2 Point and line.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\3 Points.xaml.cs">
+      <DependentUpon>3 Points.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\Center and Point.xaml.cs">
+      <DependentUpon>Center and Point.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\Diameter Points.xaml.cs">
+      <DependentUpon>Diameter Points.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\Equation.xaml.cs">
+      <DependentUpon>Equation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Circle\Find Points.xaml.cs">
+      <DependentUpon>Find Points.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipse\Axis.xaml.cs">
+      <DependentUpon>Axis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipse\Info.xaml.cs">
+      <DependentUpon>Info.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Math.cs" />
+    <Compile Include="Parabola\Focus And Directrix.xaml.cs">
+      <DependentUpon>Focus And Directrix.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parabola\Right-Left Parabola.xaml.cs">
+      <DependentUpon>Right-Left Parabola.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parabola\Up-Down Parabola.xaml.cs">
+      <DependentUpon>Up-Down Parabola.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Straight Lines\2 Points.xaml.cs">
+      <DependentUpon>2 Points.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Straight Lines\Convert Equation.xaml.cs">
+      <DependentUpon>Convert Equation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Straight Lines\Dstance From Line.xaml.cs">
+      <DependentUpon>Dstance From Line.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Straight Lines\Find Intersection.xaml.cs">
+      <DependentUpon>Find Intersection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Straight Lines\Triangle.xaml.cs">
+      <DependentUpon>Triangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Straight Lines\Trigonometry.xaml.cs">
+      <DependentUpon>Trigonometry.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -131,6 +186,7 @@
     <None Include="Coordinate Geometry_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ellipse\Images\Ellipse 1.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -145,7 +201,79 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Calculator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\2 Point and line.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\3 Points.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\Center and Point.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\Diameter Points.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\Equation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Circle\Find Points.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ellipse\Axis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ellipse\Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Parabola\Focus And Directrix.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Parabola\Right-Left Parabola.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Parabola\Up-Down Parabola.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\2 Points.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\Convert Equation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\Dstance From Line.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\Find Intersection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\Triangle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Straight Lines\Trigonometry.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

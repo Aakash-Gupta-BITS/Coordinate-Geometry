@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Co_ordinate_Geometry.Circle._2_Point_and_line"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Co_ordinate_Geometry.Circle"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="In_x1" HorizontalAlignment="Left" Margin="170,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="154" PlaceholderText="x1" KeyUp="In_x1_KeyUp"/>
+        <TextBox x:Name="In_y1" HorizontalAlignment="Left" Margin="329,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="154" PlaceholderText="y1" KeyUp="In_x1_KeyUp"/>
+        <TextBox x:Name="In_x2" HorizontalAlignment="Left" Margin="170,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="154" PlaceholderText="x2" KeyUp="In_x1_KeyUp"/>
+        <TextBox x:Name="In_y2" HorizontalAlignment="Left" Margin="329,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="154" PlaceholderText="y2" KeyUp="In_x1_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="129,71,0,0" TextWrapping="Wrap" Text="A  :" VerticalAlignment="Top" FontSize="25" Height="37"/>
+        <TextBlock HorizontalAlignment="Left" Margin="129,108,0,0" TextWrapping="Wrap" Text="B :" VerticalAlignment="Top" FontSize="25" Height="37"/>
+        <TextBox x:Name="In_a"      HorizontalAlignment="Left" VerticalAlignment="Top" Margin="579,76,0,0"   Width="154" PlaceholderText="a" KeyUp="In_x1_KeyUp"/>
+        <TextBox x:Name="In_b"      HorizontalAlignment="Left" VerticalAlignment="Top" Margin="778,76,0,0"  Width="154" PlaceholderText="b" KeyUp="In_x1_KeyUp"/>
+        <TextBox x:Name="In_c"      HorizontalAlignment="Left" VerticalAlignment="Top" Margin="978,76,0,0"  Width="154" PlaceholderText="c" KeyUp="In_x1_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,70,0,0" TextWrapping="Wrap" Text="x +" VerticalAlignment="Top" FontSize="25" Height="37"/>
+        <TextBlock HorizontalAlignment="Left" Margin="937,69,0,0" TextWrapping="Wrap" Text="y +" VerticalAlignment="Top" FontSize="25" Height="37"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1137,69,0,0" TextWrapping="Wrap" Text="= 0" VerticalAlignment="Top" FontSize="25" Height="37"/>
+        <TextBox x:Name="Output" HorizontalAlignment="Left" Margin="129,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1122" Height="466" PlaceholderText="Output"/>
+        <TextBlock HorizontalAlignment="Left" Margin="129,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15" Height="38" Width="354">
+            <Run Text="Here, Type "/>
+            <Run Text="the co-ordinates of 2 points from which the circle passes"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="579,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15" Height="22" Width="595">
+            <Run Text="Here, Type "/>
+            <Run Text="the Equation of line from which the center of circle passes."/>
+        </TextBlock>
+
+    </Grid>
+</Page>

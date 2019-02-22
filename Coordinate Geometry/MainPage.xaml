@@ -1,14 +1,160 @@
 ﻿<Page
-    x:Class="Coordinate_Geometry.MainPage"
+    x:Class="Co_ordinate_Geometry.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Coordinate_Geometry"
+    xmlns:local="using:Co_ordinate_Geometry"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1"/>
+        </Grid.ColumnDefinitions>
 
-    <Grid>
+        <Pivot x:Name="Window_Straight_Lines" Title="Straight Lines" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <PivotItem Header="Trigonometry">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_Trigonometry" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="2 Points">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_2_Points" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="3 Points" >
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_Triangle" Height="700" Width="2279"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Equation">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_Convert_Equation" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Find Intersection">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_Intersection" Height="700" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Distance from Line">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Straight_Point_Distance" Height="700" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
 
+        <Pivot x:Name="Window_Circle" Title="Circle" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <PivotItem Header="Equation">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_Equation" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="3 Points">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_3_Points" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Center and Point">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_Centre_Point" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Diameter Points">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_Diameter" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Find Points">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_Find_Point" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="2 Points And Line">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Circle_Point_Line" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+
+        <Pivot x:Name="Window_Parabola" Title="Parabola" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <PivotItem Header="Right/Left(y²=±4ax)">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Parabola_1" Height="720" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Up/Down(x²=±4ay)">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Parabola_2" Height="600" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Focus And Directrix">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Parabola_Focus_Directrix" Height="720" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+
+        <Pivot x:Name="Window_Ellipse" Title="Ellipse" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Visible">
+            <PivotItem Header="Information">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Ellipse_Info" Height="720" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="General">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="Ellipse_General" Height="720" Width="Auto"/>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+
+        <ScrollViewer Name="Calculator" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="1" Visibility="Collapsed">
+            <Frame Name="Calculator_frame"></Frame>
+        </ScrollViewer>
+        <Button x:Name="Show_Hide_Calc" Content="Show Calculator" HorizontalAlignment="Left" Margin="284,0,0,0" VerticalAlignment="Top" Height="38" Width="372" Click="Show_Hide_Calc_Click"/>
+
+        <Button     x:Name="MenuOpen"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,0,0,0"   Width="38"  Height="38" Content="" FontFamily="Segoe MDL2 Assets" FontSize="20" Click="MenuOpen_Click" Grid.RowSpan="2"/>
+        <SplitView  Name="MySplitView"  HorizontalAlignment="Left" DisplayMode="CompactOverlay" OpenPaneLength="250" CompactPaneLength="0" IsPaneOpen="False" Width="250" Visibility="Visible" Grid.RowSpan="2">
+            <SplitView.Pane>
+                <ListBox SelectionMode="Single" Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged">
+                    <ListBoxItem x:Name="Menu_Open" Height="50" Margin="-200,0,0,0" Width="50">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="MenuOpen1" FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE700;" />
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="Menu_Straight_Lines" Height="50">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Straight Lines" FontSize="20" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="Menu_Circle" Height="50">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Circle" FontSize="20" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="Menu_Parabola" Height="50">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Parabola" FontSize="20" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="Menu_Ellipse" Height="50">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ellipse" FontSize="20" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+        </SplitView>
     </Grid>
 </Page>

@@ -1,7 +1,8 @@
 ﻿<Application
-    x:Class="Coordinate_Geometry.App"
+    x:Class="Co_ordinate_Geometry.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Coordinate_Geometry">
+    xmlns:local="using:Co_ordinate_Geometry"
+    RequestedTheme="Light">
 
 </Application>

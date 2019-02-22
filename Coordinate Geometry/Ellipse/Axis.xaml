@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Co_ordinate_Geometry.Ellipse.Axis"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Co_ordinate_Geometry.Ellipse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,397,0,0"  FontSize="20" Text="Focus = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,397,0,0" FontSize="20" Text="a = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,503,0,0" FontSize="20" Text="b = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,434,0,0" FontSize="20" Text="Major Axis"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,540,0,0" FontSize="20" Text="Minor Axis"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,81,0,0"   FontSize="20" Text="x²/"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,81,0,0"  FontSize="20" Text="+ y² /"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,81,0,0"  FontSize="20" Text="= 1"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="204,157,0,0" FontSize="20" Text="x² + "/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="390,157,0,0" FontSize="20" Text="y² = "/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,281,0,0"  FontSize="20" Text="A : "/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,313,0,0"  FontSize="20" Text="B :"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,503,0,0"  FontSize="20" Text="Focus = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,618,0,0" FontSize="20" Text="b = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,655,0,0" FontSize="20" Text="Minor Axis"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,618,0,0"  FontSize="20" Text="a = ±"/>
+        <TextBlock                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,655,0,0"  FontSize="20" Text="Major Axis"/>
+        <TextBox x:Name="In_eq_a2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,81,0,0"   Width="140"                PlaceholderText="a²"       KeyUp="In_eq_a2_KeyUp"/>
+        <TextBox x:Name="In_eq_b2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,81,0,0"  Width="140"                PlaceholderText="b²"       KeyUp="In_eq_a2_KeyUp"/>
+        <TextBox x:Name="In_eq2_m" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,157,0,0"  Width="140"                PlaceholderText="m"        KeyUp="In_eq2_m_KeyUp"/>
+        <TextBox x:Name="In_eq2_n" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="245,157,0,0" Width="140"                PlaceholderText="n"        KeyUp="In_eq2_m_KeyUp"/>
+        <TextBox x:Name="In_eq2_o" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,157,0,0" Width="140"                PlaceholderText="≠ 0"      KeyUp="In_eq2_m_KeyUp"/>
+        <TextBox x:Name="In_Ax"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,281,0,0"  Width="140"                PlaceholderText="x1"       KeyUp="In_Ax_KeyUp"/>
+        <TextBox x:Name="In_Ay"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,281,0,0" Width="140"                PlaceholderText="y1"       KeyUp="In_Ax_KeyUp"/>
+        <TextBox x:Name="In_Bx"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,313,0,0"  Width="140"                PlaceholderText="x2"       KeyUp="In_Ax_KeyUp"/>
+        <TextBox x:Name="In_By"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,313,0,0" Width="140"                PlaceholderText="y2"       KeyUp="In_Ax_KeyUp"/>
+        <TextBox x:Name="In_c"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,397,0,0" Width="144"                PlaceholderText="c or ae"  KeyUp="In_c_KeyUp"/>
+        <TextBox x:Name="In_a"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,397,0,0" Width="140"                PlaceholderText="Vertices" KeyUp="In_c_KeyUp"   TextChanged="In_a_TextChanged"/>
+        <TextBox x:Name="In_2a"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,429,0,0" Width="140"                PlaceholderText="2a"       KeyUp="In_c_KeyUp"   TextChanged="In_2a_TextChanged"/>
+        <TextBox x:Name="In_c_2"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,503,0,0" Width="144"                PlaceholderText="c or ae"  KeyUp="In_c_2_KeyUp"/>
+        <TextBox x:Name="In_b"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,503,0,0" Width="140"                PlaceholderText="b"        KeyUp="In_c_2_KeyUp" TextChanged="In_b_TextChanged"/>
+        <TextBox x:Name="In_2b"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,535,0,0" Width="140"                PlaceholderText="2b"       KeyUp="In_c_2_KeyUp" TextChanged="In_2b_TextChanged"/>
+        <TextBox x:Name="In_a_2"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,618,0,0" Width="140"                PlaceholderText="a"        KeyUp="In_a_2_KeyUp" TextChanged="In_a_2_TextChanged"/>
+        <TextBox x:Name="In_2a_2"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,650,0,0" Width="140"                PlaceholderText="2a"       KeyUp="In_a_2_KeyUp" TextChanged="In_2a_2_TextChanged"/>
+        <TextBox x:Name="In_b_2"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,618,0,0" Width="140"                PlaceholderText="b"        KeyUp="In_a_2_KeyUp" TextChanged="In_b_2_TextChanged"/>
+        <TextBox x:Name="In_2b_2"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,650,0,0" Width="140"                PlaceholderText="2b"       KeyUp="In_a_2_KeyUp" TextChanged="In_2b_2_TextChanged"/>
+        <TextBox x:Name="Output"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="618,10,0,0"  Width="652"   Height="700" PlaceholderText="Output"/>
+        <Button x:Name="Clear"     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"   Width="603"   Content="Clear all" Click="Clear_Click"/>
+        <RadioButton x:Name="_x"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,230,0,0"  Content="Along  x-axis"/>
+        <RadioButton x:Name="_y"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,230,0,0" Content="Along  y-axis"/>
+    </Grid>
+</Page>
