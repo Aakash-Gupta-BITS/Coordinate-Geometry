@@ -1,0 +1,10 @@
+﻿<Application
+    x:Class="Coordinate_Geometry_Updated.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Coordinate_Geometry_Updated"
+    RequestedTheme="Dark">
+    <Application.Resources>
+        <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+    </Application.Resources>
+</Application>
